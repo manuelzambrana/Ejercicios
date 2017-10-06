@@ -32,3 +32,11 @@ Puedes ejecutar el programa mediante el siguiente comando:
 ```console
 java Holamundo
 ```
+
+##Que se aprende en programación.
+
+* Lenguaje java.
+* Comando linux.
+* Git y github.
+
+[Aprende java con ejercicios](https:/leanpub.com/aprendejava)
