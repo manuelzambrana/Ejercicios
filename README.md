@@ -35,9 +35,9 @@ java Holamundo
 
 ## ¿Qué se aprende en programación?.
 
-* Lenguaje java.
-* Comando de linux.
-* Git y github.
+* Lenguaje java. :coffee:
+* Comando de linux. :penguin:
+* Git y github. :octocat:
 
 ## Bibliografía
 
