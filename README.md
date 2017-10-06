@@ -41,7 +41,7 @@ java Holamundo
 
 ## Bibliografía
 
-<img src="Imágenes/java.jpeg">
+<img src="imagenes/hero.jpeg">
 
 
 
