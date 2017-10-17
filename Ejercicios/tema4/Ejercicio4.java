@@ -9,15 +9,18 @@ public class Ejercicio4 {
     System.out.println("Introduce las horas trabajadas para saber salario");
     int hora = Integer.parseInt(System.console() .readLine());
     int salario = hora*12;
-    int salarioExtra = hora*16;
+  
     
     if(hora<=40){
       System.out.println("tu salario es de: "+ salario);
+      
     }
     
     else{
-      System.out.println("tu salario es de:" + salarioExtra);
+       salario= (40*12) + ((hora-40)*16);
+       System.out.println("tu salario es de: "+ salario);
     }
+    
     
    
   }
