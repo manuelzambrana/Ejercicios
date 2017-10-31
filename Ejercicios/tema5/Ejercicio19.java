@@ -12,14 +12,14 @@ public class Ejercicio19{
     int h = Integer.parseInt(System.console().readLine());
     
     int altura=1;
-    int espacios=h;
+    int espacios=h-1;
     int i=0;
     
     
     while(altura<=h){
       
     
-      for( i=1;i<espacios;i++){
+      for( i=1;i<=espacios;i++){
         System.out.print(" ");
       }
       for(i=1;i<altura*2;i++){

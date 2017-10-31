@@ -9,10 +9,21 @@ public class Ejercicio12{
     
     System.out.println("introduce el total de numeros para la secuencia fibonacci  ");
     int numero=Integer.parseInt(System.console().readLine());
+    int aux;
+    int a=0,b=1;
     
-    for(int i = 0; i<numero;++i){
-       System.out.println(i+i);
-     }
+   
+      System.out.print("0,1,");
+      while(numero>2){
+      aux=a;
+      a=b;
+      b=aux+b;
+      System.out.print(b+",");
+      numero--;
+    }
+      
+    
+    
       
     
     
