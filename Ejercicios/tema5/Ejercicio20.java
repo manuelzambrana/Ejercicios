@@ -12,10 +12,10 @@ public class Ejercicio20{
     int h = Integer.parseInt(System.console().readLine());
     
     int altura=1;
-    int espacios=h;
+    int espacios=h-1;
     int i=0;
     int espaciosDeDentro=0;
-    while(altura<=h){    
+    while(altura<h){    
         for(i=1;i<=espacios;i++){
           System.out.print(" ");
         }
