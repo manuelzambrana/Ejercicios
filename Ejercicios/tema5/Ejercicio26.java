@@ -18,15 +18,15 @@ public class Ejercicio26{
     
     while(n>0){
       aux=(n%10)+(aux*10);
-      n=n/10;
-      if((aux%10)==numero){
-        System.out.println(numero + " se encuentra en la posicion " +posicion );
-        } 
-        aux=aux/10;
-        posicion++;
-        
-      
+      n=n/10;      
     }
+    while(aux>0){
+          if((aux%10)==numero){
+          System.out.println(numero + " se encuentra en la posicion " +posicion );
+          } 
+          aux=aux/10;
+          posicion++;
+        }
     
   }
 }
