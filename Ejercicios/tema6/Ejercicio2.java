@@ -9,8 +9,7 @@ public class Ejercicio2{
     
     int suma=0;
     int tirada;
-    int palo=(int)(Math.random()*4)+1
-    ;
+    int palo=(int)(Math.random()*4)+1;
     int numero=(int)(Math.random()*13)+1;
     
     
