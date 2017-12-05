@@ -18,7 +18,11 @@ public class Ejercicio12 {
    */
   public static void main(String[] args) {
     int i=0;
+    int fin=0;
+    int inicial=0;
     int[] num = new int[10];
+    int[] aux = new int[10];
+    boolean correcto;
     Scanner s = new Scanner(System.in);
     
     for( i=0;i<10;i++){ 
@@ -27,25 +31,47 @@ public class Ejercicio12 {
       num[i]=n;
     
     }
-    System.out.println("Dime la posicion inicial");
-    int inicial=s.nextInt();
-    System.out.println("Dime la posicion al que deseas moverlo");
-    int fin =s.nextInt();
     
-  
-      int aux=num[9];
-      for(i=9;i>0;i--){
-        if((num[i]<inicial)&&(num[i]>fin)){
-          num[i]=num[i-1];
-        }
+    do{
+      correcto =true;
+      System.out.println("Dime la posicion inicial");
+       inicial=s.nextInt();
+      if((inicial<0)||(inicial>9)){
+        System.out.println("Datos incorrectos");
+        correcto=false;
+        
       }
-     
-    
-    
-    
+      System.out.println("Dime la posicion al que deseas moverlo");
+       fin =s.nextInt();
+      if((fin<0)||(fin>9)){
+        System.out.println("Datos incorrectos");
+        correcto=false;        
+      }
+      if(inicial>=fin){
+        System.out.println("Datos incorrectos");
+        correcto=false;
+        
+      }      
+    }while(!correcto);   
     for(i=0;i<10;i++){    
     System.out.print(num[i]+" ");
     }
+    for(i=0;i<10;i++){    
+      aux[i]=num[i];
+    }
+      aux[fin]=num[inicial];
+      for(i=fin+1;i<10;i++){
+        aux[i]=num[i-1];        
+      }
+      aux[0]=num[9];
+      for(i=0;i<inicial;i++){
+        aux[i+1]=num[i];        
+      }
+      
+      for(i=0;i<10;i++){
+        System.out.print(aux[i]+" ");      
+      }
+   
     // TODO code application logic here
   }
   
