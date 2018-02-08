@@ -18,6 +18,10 @@ public class Bicicleta extends Vehiculo {
     this.modeloRueda = modeloRueda;
   }
 
+  public String getModeloRueda() {
+    return modeloRueda;
+  }
+
   public void setModeloRueda(String modeloRueda) {
     this.modeloRueda = modeloRueda;
   }
