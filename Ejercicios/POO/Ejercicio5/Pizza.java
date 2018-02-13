@@ -44,7 +44,7 @@ public class Pizza {
       this.estado="servida";
       pizzaServidas++;
     }else{
-      System.out.println("Lo siento ya hemos servido esta pizza");
+      System.out.println("Lo siento ya hemos servido la pizza");
     }
     
   }

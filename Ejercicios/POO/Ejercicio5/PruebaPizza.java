@@ -23,6 +23,9 @@ public class PruebaPizza {
     System.out.println(p2);
     System.out.println(p3);
     p2.sirve();
+    p3.sirve();
+    p1.sirve();
+    p3.sirve();
     System.out.println("pedidas: " + Pizza.getPizzaPedidas());
     System.out.println("servidas: " + Pizza.getPizzaServidas());
 
